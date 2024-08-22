@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock and Location Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Items..." id="search">
+        </div>
+        <h1>Stock & Loaction Management</h1>
+    </header>
+    <div class="center">
+        <div class="add-product-false" id="addProduct">
+            <div class="add-header">
+                <h1>Add Product</h1>
+                <Button id="close"><p>+</p></Button>
+            </div>
+            <div class="sides">
+                <div class="side">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name_input" placeholder="Pasta">
+        
+                    <label for="barcode">Barcode: </label>
+                    <input type="text" name="barcode" id="barcode_input" placeholder="4048374076500">
+        
+                    <label for="description">Description: </label>
+                    <input type="text" name="description" id="desc_input" placeholder="Lorem Ispum is Lorem Ispum">
+                </div>
+                <div class="side">
+                    <label for="sku">SKU: </label>
+                    <input type="text" name="sku" id="sku_input" placeholder="0001">
+        
+                    <label for="location">Location: </label>
+                    <input type="text" name="location" id="location_input" placeholder="K1">
+        
+                    <label for="qty">Qty: </label>
+                    <input type="number" name="qty" id="qty_input" placeholder="0">
+                </div>
+            </div>
+            <button class="add-btn" id="addBtn">Save</button>
+        </div>
+    </div>
+    <div class="container">
+        <button class="add" id="add"><i class="fa-solid fa-plus"></i> Add Article</button>
+        <table>
+            <tbody id="tabla">
+                <tr class="legend">
+                    <th class="num">No.</th>
+                    <th>SKU</th>
+                    <th>Name</th>
+                    <th>Barcode</th>
+                    <th>Qty.</th>
+                    <th>Location</th>
+                    <th class="descl">Description</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

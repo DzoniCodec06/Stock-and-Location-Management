@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 1rem;
+    box-shadow: 0px 10px 60px #0000001f;
+}
+
+.search-bar {
+    background-color: #E6E6E6;
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 2px 4px 20px #0000001e;
+}
+
+header .search-bar input {
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #666666;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 5px 5px;
+    width: 15rem;
+}
+
+.search-bar i {
+    color: #A8A8A8;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 85vh;
+    transition: all ease-in 0.2s;
+}
+
+.container-false {
+    display: none;
+}
+
+.container button.add {
+    background-color: #E6E6E6;
+    border: 1px solid #CACACA;
+    outline: none;
+    border-radius: 10px;
+    color: #A8A8A8;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 8vw;
+    padding: 5px 15px;
+    font-family: "Poppins", sans-serif;
+    z-index: 1;
+}
+
+table {
+    text-align: center;
+    padding-bottom: 10px;
+    display: inline-table;
+    overflow: auto;
+    position: sticky;
+    max-height: 80vh;
+}
+
+th {
+    width: 3vw;
+    border-right: 1px solid black;
+}
+
+.article td:last-child {
+    border: none;
+}
+
+tr {
+    border-spacing: 20px;
+}
+
+tr.article {
+    background-color: #E6E6E6;
+}
+
+td {
+    width: 3vw;
+    border-right: 1px solid #ffffff;
+    padding: 5px 10px;
+}
+
+.article {
+    transition: all ease-in 0.3s;
+}
+
+.article td:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.article td:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.descl {
+    width: 10vw;
+}
+
+td.btns {
+    width: 1vw;
+    cursor: pointer;
+}
+
+.num {
+    width: 10px;
+}
+
+.center {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.add-product-false {
+    display: none;
+}
+
+.add-product-false .center {
+    display: none;
+    width: 0px;
+    height: 0px;
+    z-index: 0;
+}
+.add-product {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    box-shadow: 2px 2px 20px #00000047;
+    transition: all ease-in 0.3s;
+}
+
+.sides {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+}
+
+.side {
+    padding: 20px 20px;
+}
+
+.side input {
+    background-color: #F1F1F1;
+    border: 1px solid #ADADAD;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    width: 15vw;
+}
+
+.add-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 35%;
+    box-shadow: 0px 10px 60px #0000001f;
+}
+
+#close {
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    box-shadow: 2px 2px 20px #00000047;
+    width: min-content;
+    height: min-content;
+    padding: 0px 7px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+#close p {
+    rotate: 45deg;
+}
+
+.add-btn {
+    background-color: #F1F1F1;
+    border: 1px solid #ADADAD;
+    font-family: "Poppins", sans-serif;
+    color: #1D1D1D;
+    font-size: 25px;
+    margin-inline: 40%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/*
+table {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+table td, th {
+    padding-inline: 3vw;
+    border: 1px solid #000;
+}*/

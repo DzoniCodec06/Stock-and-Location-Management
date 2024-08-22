@@ -1,0 +1,17 @@
+{
+  "name": "stock-and-location-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Nikola Bojinovic & Djordje Kostic",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.2.1"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
